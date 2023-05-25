@@ -23,8 +23,8 @@ const arrArr2 = [
   [8, 9],
 ];
 
-//======================reduceRight==============================
 console.log(myReduce(arrArr2, (a, b) => a.concat(b)));
+//======================reduceRight==============================
 
 function myReduceRight(arr, callback, startValue) {
   let result;
@@ -48,7 +48,8 @@ const arr = [1, 2, 3, 4, 5];
 const sum = myReduceRight(arr, (accumulator, currentValue) => accumulator + currentValue);
 console.log(sum); 
 
-const product = myReduceRight(arr, (accumulator, currentValue) => accumulator * currentValue, 2);
-console.log(product); 
+// const product = myReduceRight(arr, (accumulator, currentValue) => accumulator * currentValue, 2);
+// console.log(product); 
+console.log(myReduceRight(arr, (accumulator, currentValue) => accumulator - currentValue));
 
 
